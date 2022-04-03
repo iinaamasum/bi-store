@@ -5,16 +5,16 @@ import './Home.css';
 
 const Home = () => {
   return (
-    <div className="flex items-center justify-between container__home pt-3">
-      <div className="w-1/2 pr-8">
-        <h1 className="text-8xl text-red-500 font-mono font-bold">
+    <div className="md:flex items-center justify-between container__home pt-3">
+      <div className="md:w-1/2 pr-8 order-last md:order-first">
+        <h1 className="text-4xl lg:text-6xl 2xl:text-8xl text-red-500 font-mono font-bold">
           The bi-cycle <br /> You want
         </h1>
-        <h2 className="text-5xl font-serif text-blue-500 font-semibold pt-8">
+        <h2 className="text-3xl md:text-5xl font-serif text-blue-500 font-semibold pt-8">
           Your Dream lies here
         </h2>
 
-        <p className="text-xl pt-4 text-justify">
+        <p className="lg:text-xl pt-4 text-justify">
           Hi there. If you want to buy a bi-cycle this the best store for you.
           You can compare among hundreds of bi-cycle and choose the right one
           for you. See our review to know more.
@@ -27,7 +27,7 @@ const Home = () => {
           </span>
         </button>
       </div>
-      <div className="w-1/2 home__img rounded bg-gray-400">
+      <div className="md:w-1/2 home__img rounded bg-gray-400">
         <img className="rounded " src={logo} alt="" srcSet="" />
       </div>
     </div>

@@ -4,7 +4,7 @@ import { RiCloseLine } from 'react-icons/ri';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const links = [
     { id: 1, link: '/', name: 'Home' },
     { id: 2, link: '/review', name: 'Review' },
