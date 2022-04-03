@@ -1,0 +1,14 @@
+.container__home {
+  width: 90%;
+  margin-left: 10%;
+}
+
+.home__img {
+  height: 90vh;
+}
+
+.home__img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
