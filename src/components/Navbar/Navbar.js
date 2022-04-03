@@ -13,34 +13,35 @@ const Navbar = () => {
     { id: 5, link: '/about', name: 'about' },
   ];
   return (
-    <div className="shadow-lg sticky top-0 left-0">
-      <nav className="container mx-auto py-4">
-        <div className="text-4xl flex items-center justify-between">
-          <h1 className="uppercase tracking-wide font-mono font-bold pt-2 cursor-pointer">
-            Product Checker
-          </h1>
-
-          {/* FaHamburger */}
-          <div
-            onClick={() => setOpen(!open)}
-            className="absolute right-8 top-6 md:hidden"
-          >
-            {open ? <FaHamburger /> : <RiCloseLine />}
-          </div>
-
-          <ul
-            className={`md:flex md:items-center absolute md:static w-full md:w-auto pl-8 md:pl-0 transition-all duration-500 ease-in-out left-0 ${
-              open ? 'top-17' : 'top-[-500px]'
-            }`}
-          >
-            {links.map((link) => (
-              <li key={link.id} className="text-2xl pl-3">
-                <Link to={link.link}>{link.name}</Link>
-              </li>
-            ))}
-          </ul>
+    <div className="shadow-md w-full sticky top-0 left-0 bg-white">
+      <div className="md:flex items-center justify-between py-4 container mx-auto">
+        {/* logo */}
+        <div className="uppercase tracking-wide text-3xl sm:text-4xl cursor-pointer text-gray-900 font-bold ml-8 sm:ml-0">
+          Product Checker
         </div>
-      </nav>
+        {/* FaHamburger */}
+        <div
+          onClick={() => setOpen(!open)}
+          className="text-2xl absolute right-8 top-5 cursor-pointer md:hidden"
+        >
+          {open ? <RiCloseLine /> : <FaHamburger />}
+        </div>
+        {/* links */}
+        <ul
+          className={`text-xl md:flex md:items-center absolute md:static bg-white z-[-1] md:z-auto left-0 w-full md:w-auto pl-12 md:pl-0 transition-all duration-500 ease-in-out ${
+            open ? 'top-17 opacity-95' : 'top-[-900px] md:opacity-100 opacity-0'
+          }`}
+        >
+          {links.map((link) => (
+            <li
+              className="md:ml-8 my-7 md:my-0 text-gray-900 hover:text-gray-400 transition-all duration-200 uppercase font-semibold"
+              key={link.id}
+            >
+              <Link to={link.link}>{link.name}</Link>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };
