@@ -1,9 +1,12 @@
 import React from 'react';
 import { MdArrowForwardIos } from 'react-icons/md';
+import { useNavigate } from 'react-router-dom';
 import logo from '../../Assets/home.jpg';
 import './Header.css';
 
 const Header = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="md:flex items-center justify-between container__home pt-3">
       <div className="md:w-1/2 pr-8 order-last md:order-first">
@@ -20,7 +23,10 @@ const Header = () => {
           for you. See our review to know more.
         </p>
 
-        <button className="border-2 border-gray-700 rounded-lg mt-3 px-10 py-4 hover:bg-gray-700 hover:text-white transition-all duration-500 ease-in-out">
+        <button
+          onClick={() => navigate('/dashboard')}
+          className="border-2 border-gray-700 rounded-lg mt-3 px-10 py-4 hover:bg-gray-700 hover:text-white transition-all duration-500 ease-in-out"
+        >
           <span className="text-2xl tracking-wide font-mono font-semibold inline-flex items-center">
             <span className="pt-1">Live Show</span>
             <MdArrowForwardIos className="ml-4" size={30} />
