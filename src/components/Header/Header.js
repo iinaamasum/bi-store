@@ -9,7 +9,7 @@ const Header = () => {
 
   return (
     <div className="md:flex items-center justify-between container__home pt-3">
-      <div className="md:w-1/2 pr-8 order-last md:order-first">
+      <div className="md:w-1/2 pr-8 mb-6 md:mb-0">
         <h1 className="text-4xl lg:text-6xl 2xl:text-8xl text-red-500 font-mono font-bold">
           The bi-cycle <br /> You want
         </h1>
