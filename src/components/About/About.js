@@ -6,6 +6,12 @@ const About = () => {
   return (
     <div className="contain">
       <div className="w-full container mx-auto px-4 sm:px-0">
+        <h1 className="text-center font-mono font-bold text-6xl pb-2 text-slate-700">
+          Want to Know More
+        </h1>
+        <h2 className="text-center font-mono font-bold text-3xl pb-4 text-blue-500">
+          Fill up the form to connect with us
+        </h2>
         <div className="flex flex-wrap -mx-3 mb-6">
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             <label
