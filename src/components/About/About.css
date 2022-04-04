@@ -1,0 +1,11 @@
+.contain {
+  height: 82vh;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .contain {
+    height: 100%;
+  }
+}

@@ -4,7 +4,7 @@ import { BsFacebook, BsGithub, BsLinkedin } from 'react-icons/bs';
 
 const Footer = () => {
   return (
-    <div className="bg-gray-600 mt-8 py-3">
+    <div className="bg-gray-600 py-3">
       <div className="text-center flex justify-center items-center pt-2">
         <BsFacebook
           size={30}

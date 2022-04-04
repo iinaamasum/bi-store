@@ -2,7 +2,7 @@ import React from 'react';
 
 const Blogs = () => {
   return (
-    <div className="container mx-auto px-4 sm:px-0">
+    <div style={{ height: '80vh' }} className="container mx-auto px-4 sm:px-0">
       <h1 className="text-5xl font-mono font-bold text-center mt-8">
         Important Information
       </h1>

@@ -5,7 +5,7 @@ import Card from '../Card/Card';
 const Review = () => {
   const [items] = useUserData();
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto mb-4">
       <div className="text-center text-4xl md:text-6xl py-5 text-blue-500 font-bold font-mono">
         <h1>Our Happiest Customers</h1>
       </div>

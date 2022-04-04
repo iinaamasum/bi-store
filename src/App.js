@@ -20,7 +20,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/blog" element={<Blogs />} />
         <Route path="/review" element={<Review />} />
-        <Route path="*" element={<Error404 />} />
+        <Route path="/*" element={<Error404 />} />
       </Routes>
       <Footer />
     </div>

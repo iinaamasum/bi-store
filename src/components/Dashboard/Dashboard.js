@@ -20,7 +20,7 @@ import useGraph from '../../hooks/useGraph';
 const Dashboard = () => {
   const [data] = useGraph();
   return (
-    <div className="">
+    <div className="mb-5">
       <div>
         <h1 className="text-center text-blue-500 font-bold font-mono text-4xl pt-10">
           All data of this month
