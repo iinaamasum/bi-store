@@ -1,4 +1,5 @@
 import React from 'react';
+import { MdArrowForwardIos } from 'react-icons/md';
 import './About.css';
 
 const About = () => {
@@ -107,9 +108,17 @@ const About = () => {
               className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
               id="grid-zip"
               type="text"
-              placeholder="*****"
+              placeholder="12345"
             />
           </div>
+        </div>
+        <div className="text-center mb-4 sm:mb-2">
+          <button className="border-2 border-gray-700 rounded-lg mt-3 px-10 py-4 hover:bg-gray-700 hover:text-white transition-all duration-500 ease-in-out text-center">
+            <span className="text-2xl tracking-wide font-mono font-semibold inline-flex items-center">
+              <span className="pt-1">Submit All Now</span>
+              <MdArrowForwardIos className="ml-4" size={30} />
+            </span>
+          </button>
         </div>
       </div>
     </div>
