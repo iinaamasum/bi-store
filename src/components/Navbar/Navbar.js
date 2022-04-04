@@ -13,11 +13,11 @@ const Navbar = () => {
     { id: 5, link: '/about', name: 'about' },
   ];
   return (
-    <div className="shadow-md w-full sticky top-0 left-0 bg-white">
+    <div className="shadow-md w-full top-0 left-0 bg-white">
       <div className="md:flex items-center justify-between py-4 container mx-auto">
         {/* logo */}
         <div className="uppercase tracking-wide text-3xl sm:text-4xl cursor-pointer text-gray-900 font-bold ml-8 sm:ml-0">
-          Product Checker
+          BI-store
         </div>
         {/* FaHamburger */}
         <div

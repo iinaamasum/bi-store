@@ -4,7 +4,7 @@ import './Card.css';
 const Card = (props) => {
   const { pic, rating, name, company, des, email } = props.item;
   return (
-    <div className="pt-10 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    <div className="pt-10 bg-white rounded-lg border border-gray-200 shadow-md">
       <div className="flex flex-col items-center pb-3 card__img">
         <img
           className="mb-3 w-24 h-24 rounded-full shadow-lg"
