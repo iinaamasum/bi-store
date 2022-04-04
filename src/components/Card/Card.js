@@ -26,7 +26,7 @@ const Card = (props) => {
         </div>
       </div>
       <div className="text-2xl text-left p-2">
-        <p className="text-mono">Rating: {rating} star</p>
+        <p className="text-mono text-orange-500">Rating: {rating} star</p>
         <p className="text-base text-justify">{des}</p>
       </div>
     </div>

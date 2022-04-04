@@ -1,0 +1,5 @@
+@media (min-width: 1024px) {
+  .contain__blog {
+    min-height: 100vh;
+  }
+}

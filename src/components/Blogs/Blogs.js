@@ -1,8 +1,9 @@
 import React from 'react';
+import './Blogs.css';
 
 const Blogs = () => {
   return (
-    <div style={{ height: '80vh' }} className="container mx-auto px-4 sm:px-0">
+    <div className="contain__blog container mx-auto px-4 sm:px-0">
       <h1 className="text-5xl font-mono font-bold text-center mt-8">
         Important Information
       </h1>
